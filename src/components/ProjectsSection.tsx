@@ -1,4 +1,4 @@
-import { Radio, Globe, Shield, GraduationCap, ArrowUpRight } from "lucide-react";
+import { Radio, Globe, Shield, GraduationCap, ArrowUpRight, FileText } from "lucide-react";
 
 export default function ProjectsSection() {
   return (
@@ -18,30 +18,47 @@ export default function ProjectsSection() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[minmax(180px,auto)]">
         
         {/* 🌟 CARTE 1 : FRAGCAST (Projet Phare - R&D) */}
-        <div className="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-xl border bg-gradient-to-br from-primary/5 to-transparent p-8 flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                <Radio className="w-5 h-5" />
-              </div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">R&D / Publication IET</span>
-            </div>
-            <h3 className="text-2xl font-bold mb-3">FragCast : Framework OTA IoT</h3>
-            <p className="text-muted-foreground leading-relaxed max-w-lg">
-              Conception d'un protocole de transfert de firmware par fragments via BLE Broadcast pour objets contraints. Résout les problèmes de scalabilité et de consommation énergétique pour les réseaux de capteurs.
-            </p>
-          </div>
-          
-          <div className="mt-8 flex flex-wrap gap-2">
-            <span className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">ESP32</span>
-            <span className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">BLE</span>
-            <span className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">C++</span>
-            <span className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">IoT</span>
-          </div>
+<div className="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-xl border bg-gradient-to-br from-primary/5 to-transparent p-8 flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+  <div>
+    {/* Badge Publication IET - Très visible */}
+    <div className="flex items-center gap-2 mb-4">
+      <div className="px-3 py-1.5 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+        <FileText className="w-3.5 h-3.5" />
+        Publication IET Journal
+      </div>
+      <div className="p-2 rounded-lg bg-primary/10 text-primary">
+        <Radio className="w-5 h-5" />
+      </div>
+    </div>
+    
+    <h3 className="text-2xl font-bold mb-3">FragCast : Framework OTA IoT</h3>
+    <p className="text-muted-foreground leading-relaxed max-w-lg mb-4">
+      Conception d'un protocole de transfert de firmware par fragments via BLE Broadcast pour objets contraints. Résout les problèmes de scalabilité et de consommation énergétique pour les réseaux de capteurs.
+    </p>
+    
+    {/* Titre de l'article */}
+    <div className="rounded-lg border border-primary/20 bg-background/50 p-4 mb-4">
+      <p className="text-xs font-mono text-muted-foreground mb-1">Article accepté :</p>
+      <p className="text-sm font-semibold text-foreground leading-snug">
+        "FragCast: A Scalable BLE-based OTA Framework for Constrained IoT Devices"
+      </p>
+      <p className="text-xs text-muted-foreground mt-2">
+        E. Souboura, D. Wohwe Sambo, P. Dayang, M.V. Komguep, L. Clavier
+      </p>
+    </div>
+  </div>
+  
+  <div className="mt-4 flex flex-wrap gap-2">
+    <span className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">ESP32</span>
+    <span className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">BLE</span>
+    <span className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">C++</span>
+    <span className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">IoT</span>
+    <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/20 text-primary font-semibold">Recherche</span>
+  </div>
 
-          {/* Petite flèche en haut à droite */}
-          <ArrowUpRight className="absolute top-6 right-6 w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
-        </div>
+  {/* Petite flèche en haut à droite */}
+  <ArrowUpRight className="absolute top-6 right-6 w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
+</div>
 
         {/* 💻 CARTE 2 : UNIVERSITÉ DE NGAOUNDÉRÉ */}
         <div className="group relative overflow-hidden rounded-xl border bg-card p-6 ... 

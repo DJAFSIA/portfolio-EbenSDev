@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ProjectsSection from "@/components/ProjectsSection";
 import AboutSection from "@/components/AboutSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -38,9 +40,11 @@ export default function Home() {
         </div>
       </section>
        <AboutSection />
+       <ExperienceSection />
 
       {/* --- NOUVELLE SECTION PROJETS --- */}
       <ProjectsSection />
+      <ContactSection />
 
     </main>
   );
