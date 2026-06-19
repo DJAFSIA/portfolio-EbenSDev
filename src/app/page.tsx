@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ProjectsSection from "@/components/ProjectsSection"; // 👈 Import du composant
+import ProjectsSection from "@/components/ProjectsSection";
+import AboutSection from "@/components/AboutSection";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
           <span>Nest.js</span><span>•</span><span>ESP32 / BLE</span><span>•</span><span>Tailwind CSS</span>
         </div>
       </section>
+       <AboutSection />
 
       {/* --- NOUVELLE SECTION PROJETS --- */}
       <ProjectsSection />

@@ -44,7 +44,9 @@ export default function ProjectsSection() {
         </div>
 
         {/* 💻 CARTE 2 : UNIVERSITÉ DE NGAOUNDÉRÉ */}
-        <div className="group relative overflow-hidden rounded-xl border bg-card p-6 flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+        <div className="group relative overflow-hidden rounded-xl border bg-card p-6 ... 
+           hover:bg-gradient-to-br hover:from-primary/5 hover:to-transparent
+           transition-all duration-300">
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="p-1.5 rounded-md bg-blue-500/10 text-blue-500">
@@ -65,7 +67,9 @@ export default function ProjectsSection() {
         </div>
 
         {/* 🏢 CARTE 3 : VIFIC GROUP */}
-        <div className="group relative overflow-hidden rounded-xl border bg-card p-6 flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+        <div className="group relative overflow-hidden rounded-xl border bg-card p-6 ... 
+           hover:bg-gradient-to-br hover:from-primary/5 hover:to-transparent
+           transition-all duration-300">
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="p-1.5 rounded-md bg-green-500/10 text-green-500">
@@ -86,7 +90,9 @@ export default function ProjectsSection() {
         </div>
 
         {/* 🏫 CARTE 4 : COMPLEXE LA VICTOIRE */}
-        <div className="group relative overflow-hidden rounded-xl border bg-card p-6 flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+        <div className="group relative overflow-hidden rounded-xl border bg-card p-6 ... 
+           hover:bg-gradient-to-br hover:from-primary/5 hover:to-transparent
+           transition-all duration-300">
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="p-1.5 rounded-md bg-purple-500/10 text-purple-500">

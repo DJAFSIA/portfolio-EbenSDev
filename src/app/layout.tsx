@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar"; // 👈 Import de la Navbar
+import Navbar from "@/components/Navbar";
+import MouseGlow from "@/components/MouseGlow"; // 👈 Import
 
-// Polices : Inter pour le texte, JetBrains Mono pour le côté "Tech"
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
@@ -18,17 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="dark"> {/* On force le mode sombre par défaut, très "Brittany" */}
+    <html lang="fr" className="dark">
       <body className={`${inter.variable} ${jetbrains.variable} font-sans antialiased`}>
-        
-        {/* La Navbar est ici, elle sera sur toutes les pages */}
         <Navbar />
-        
-        {/* Le contenu de tes pages (page.tsx) s'insère ici */}
-        <main className="pt-20"> {/* pt-20 pour éviter que le contenu ne soit caché sous la navbar fixe */}
+        <MouseGlow /> 
+        <main className="pt-20">
           {children}
         </main>
-
       </body>
     </html>
   );
