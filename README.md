@@ -1,4 +1,4 @@
-# 💼 Portfolio Professionnel - [Ton Prénom Nom]
+# 💼 Portfolio Professionnel - Ebenezer DJAFSIA S
 
 Développeur Fullstack & Ingénieur IoT. Ce dépôt contient le code source de mon portfolio personnel.
 
