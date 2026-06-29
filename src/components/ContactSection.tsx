@@ -85,26 +85,18 @@ export default function ContactSection() {
       </div>
 
       
-      {/* CTA Principal : Télécharger le CV */}
+       {/* CTA Principal : M'envoyer un email (centré) */}
       <div className="text-center py-12 rounded-xl border bg-card">
-        <h3 className="text-2xl font-bold mb-4">Prêt à collaborer ?</h3>
+        <h3 className="text-2xl font-bold mb-4">Travaillons ensemble</h3>
         <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-          Téléchargez mon CV pour découvrir mon parcours en détail, ou contactez-moi directement pour discuter de votre projet.
+          Vous avez un projet en tête ou souhaitez échanger sur mes compétences ? N'hésitez pas à me contacter directement.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild size="lg" className="text-base px-8">
-            <a href="/CV_Ebenezer_Souboura.pdf" target="_blank" rel="noopener noreferrer">
-              <FileText className="w-4 h-4 mr-2" />
-              Télécharger mon CV
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="text-base px-8">
-            <a href="mailto:ebenezer.souboura@email.com">
-              <Send className="w-4 h-4 mr-2" />
-              M'envoyer un email
-            </a>
-          </Button>
-        </div>
+        <Button asChild size="lg" className="text-base px-8">
+          <a href="mailto:ebenezerdjafsiasb@gmail.com">
+            <Send className="w-4 h-4 mr-2" />
+            M'envoyer un email
+          </a>
+        </Button>
       </div>
 
     </section>

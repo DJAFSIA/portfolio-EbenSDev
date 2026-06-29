@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import MouseGlow from "@/components/MouseGlow"; 
+import MouseGlow from "@/components/MouseGlow";
+import SectionIndicator from "@/components/SectionIndicator";
+import LoadingScreen from "@/components/LoadingScreen"; 
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -21,8 +23,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className="dark">
       <body className={`${inter.variable} ${jetbrains.variable} font-sans antialiased`}>
+        <LoadingScreen /> {/* 👈 Ajout du loading screen */}
         <Navbar />
-        <MouseGlow /> 
+        <MouseGlow />
+        <SectionIndicator />
         <main className="pt-20">
           {children}
         </main>
