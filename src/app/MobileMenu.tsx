@@ -64,7 +64,7 @@ export default function MobileMenu() {
               className="font-mono border-primary text-primary hover:bg-primary/10"
             >
               <a
-                href="mailto:ebenezer.souboura@email.com?subject=Demande de CV"
+                href="mailto:ebenezerdjafsiasb@gmail.com?subject=Demande de CV"
                 onClick={() => setIsOpen(false)}
               >
                 CV.pdf
