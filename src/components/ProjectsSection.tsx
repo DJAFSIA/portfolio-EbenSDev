@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Radio, ExternalLink, Music, Star } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
@@ -118,11 +118,14 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
         />
         {/* Image */}
         <div className="relative rounded-lg overflow-hidden border border-border bg-card">
-          <img
-            src={project.image}
-            alt={project.imageAlt}
-            className="w-full h-full object-cover aspect-video group-hover:scale-105 transition-transform duration-500"
-          />
+          <Image
+  src={project.image}
+  alt={project.imageAlt}
+  width={1200}
+  height={675}
+  className="w-full h-full object-cover aspect-video transition-transform duration-500 group-hover:scale-[1.02]"
+  priority={false}
+/>
           {/* Overlay au hover */}
           <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
         </div>

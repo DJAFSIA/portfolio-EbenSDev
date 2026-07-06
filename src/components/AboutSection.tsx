@@ -1,4 +1,5 @@
 import { Code2, Cpu, Database, Globe, Radio, Server } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -20,11 +21,16 @@ export default function AboutSection() {
             {/* Photo de profil */}
             <div className="relative w-48 h-48 mx-auto lg:mx-0 mb-8">
     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-blue-500/20 blur-xl" />
-    <img
-      src="/images/profil.png"
-      alt="Ebenezer Souboura"
-      className="relative w-full h-full object-cover rounded-2xl border-2 border-border shadow-lg"
-    />
+    import Image from "next/image";
+
+<Image
+  src="/images/profil.png"
+  alt="Ebenezer Souboura"
+  width={400}
+  height={400}
+  className="relative w-full h-full object-cover rounded-2xl border-2 border-border shadow-lg"
+  priority={true}
+/>
     </div>
   {/* Texte */}
   <div className="space-y-6 text-muted-foreground leading-relaxed">
