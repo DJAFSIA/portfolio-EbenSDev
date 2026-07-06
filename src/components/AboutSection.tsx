@@ -136,7 +136,7 @@ export default function AboutSection() {
           <div className="text-sm text-muted-foreground">Projets Fullstack</div>
         </div>
         <div className="text-center p-6 rounded-xl border bg-card">
-          <div className="text-3xl font-bold text-primary mb-1">3</div>
+          <div className="text-3xl font-bold text-primary mb-1">5</div>
           <div className="text-sm text-muted-foreground">Années d'expérience</div>
         </div>
         <div className="text-center p-6 rounded-xl border bg-card">

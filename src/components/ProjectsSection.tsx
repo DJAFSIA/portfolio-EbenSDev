@@ -52,16 +52,16 @@ const projects = [
   },
   {
     title: "Site Corporate VIFIC Group",
-    image: "/images/projects/vific-group.jpg",
+    image: "/images/projects/vific-group.png",
     imageAlt: "Site VIFIC Group",
     cursor: cursorCode,
-    mainLink: "https://vificgroup.com",
+    mainLink: "https://vific-group-website-s4zd-jk9bvu78z-ebenezers-projects-1a5c5ae6.vercel.app/",
     badge: { text: "Web / Sécurité", color: "green" },
     description:
       "Digitalisation de l'image de marque de VIFIC Group avec sécurisation avancée des flux de données et des formulaires. Site vitrine moderne, performant et optimisé pour le SEO.",
     tags: ["Next.js", "API", "SEO", "Sécurité"],
     links: [
-      { label: "Visiter le site", href: "https://vificgroup.com", type: "external" },
+      { label: "Visiter le site", href: "https://vific-group-website-s4zd-jk9bvu78z-ebenezers-projects-1a5c5ae6.vercel.app/", type: "external" },
     ],
   },
   {
@@ -72,7 +72,7 @@ const projects = [
     mainLink: "https://github.com/ton-pseudo/cantiques-massa",
     badge: { text: "Mobile / Flutter", color: "orange", icon: Music },
     description:
-      "Application mobile Flutter dédiée aux cantiques en langue MASSA. Interface intuitive, lecture audio hors-ligne, et gestion d'une bibliothèque musicale complète pour la communauté MASSA.",
+      "Application mobile Flutter dédiée aux cantiques en langue MASSA. Interface intuitive et gestion d'une bibliothèque musicale complète pour la communauté MASSA.",
     tags: ["Flutter", "Dart", "Mobile", "Audio"],
     links: [
       {
