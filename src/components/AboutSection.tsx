@@ -21,7 +21,6 @@ export default function AboutSection() {
             {/* Photo de profil */}
             <div className="relative w-48 h-48 mx-auto lg:mx-0 mb-8">
     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-blue-500/20 blur-xl" />
-    import Image from "next/image";
 
 <Image
   src="/images/profil.png"
